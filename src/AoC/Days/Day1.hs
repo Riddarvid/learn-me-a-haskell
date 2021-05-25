@@ -4,24 +4,23 @@ module AoC.Days.Day1
 
 import qualified Data.Set as Set
 
-solve :: [String] -> (Integer, String)
+solve :: [String] -> (Integer, Integer)
 solve input = (part1 parsed, part2 parsed)
   where
     parsed = map read input
 
 part1 :: [Integer] -> Integer
-part1 input = x * y
+part1 input = product $ getTerms 2 2020 input
+
+part2 :: [Integer] -> Integer
+part2 input = product $ getTerms 3 2020 input
+
+getTerms :: Integer -> Integer -> [Integer] -> [Integer]
+getTerms 0 _ _ = []
+getTerms _ _ [] = []
+getTerms 1 target input = [target | target `elem` input]
+getTerms n target (x:xs) = if not $ null tailTerms
+  then x:tailTerms
+  else getTerms n target xs
   where
-    (x, y) = head [(x, y) | x <- input, let y = 2020 - x, Set.member y inputSet]
-    inputSet = Set.fromList input
-
-part2 :: [Integer] -> String
-part2 input = "Second result"
-
-get2Terms target input = head [(x, y) | x <- input, let y = target - x, Set.member y inputSet]
-where
-  inputSet = Set.fromList input
-
-getTerms :: Integer -> Integer -> [Integer] -> Maybe [Integer]
-getTerms 0 _ _ = Nothing
-getTerms 1 
+    tailTerms = getTerms (n - 1) (target - x) xs
