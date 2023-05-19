@@ -1,6 +1,7 @@
 module Main (main) where
-
-import Lib
+import           InputOutput (getContentsTest)
 
 main :: IO ()
-main = someFunc
+main = do
+  getContentsTest
+  putStr "Done!"
