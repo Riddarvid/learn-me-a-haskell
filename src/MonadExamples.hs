@@ -2,7 +2,8 @@ module MonadExamples (
   myIfM,
   myIfA,
   myWhen,
-  nothingIfSevenM
+  nothingIfSevenM,
+  arrowComp
 ) where
 
 -----------------
@@ -61,3 +62,8 @@ nothingIfSevenM action = do
   res <- action
   if res == 7 then Nothing else action
 --nothingIfSevenM action = action >>= (\res -> if res == 7 then Nothing else action)
+
+-------------------
+
+arrowComp :: Monad m => (a -> m b) -> (b -> m c) -> a -> m c
+arrowComp f g x = f x >>= g
