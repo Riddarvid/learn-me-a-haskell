@@ -36,9 +36,10 @@ class (MyFoldable t, Functor t) => MyTraversable t where
 
 instance MyTraversable [] where
   myTraverse :: (Applicative f) => (a -> f b) -> [a] -> f [b]
-  myTraverse f = myFoldr combine (pure [])
-    where
-      combine a = liftA2 (:) (f a)
+  myTraverse f = myFoldr (\a bs -> (:) <$> f a <*> bs) (pure [])
+
+  mySequenceA :: (Applicative f) => [f a] -> f [a]
+  mySequenceA = myFoldr (liftA2 (:)) (pure [])
 
 myTraverse_ :: (MyFoldable t, Applicative f) => (a -> f b) -> t a -> f ()
 myTraverse_ f = myFoldr g (pure ())
