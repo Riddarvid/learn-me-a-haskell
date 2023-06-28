@@ -23,6 +23,7 @@ dependencies:
   - random >= 1.2.1.1
   - bytestring >= 0.11.4.0
   - parsec >= 3.1.16.1
+  - mtl >= 2.3.1
 
 ghc-options:
   - -Wall
