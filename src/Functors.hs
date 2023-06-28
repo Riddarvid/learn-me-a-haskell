@@ -5,7 +5,8 @@
 {-# OPTIONS_GHC -Wno-unused-top-binds #-}
 module Functors (
   funcTest,
-  funcMonadtest
+  funcMonadtest,
+  MyFunc(MyFunc)
 ) where
 import           Data.Char                  (toUpper)
 import           Data.Functor.Contravariant (Contravariant (contramap))
