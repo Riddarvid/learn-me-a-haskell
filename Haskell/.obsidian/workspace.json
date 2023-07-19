@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Difference lists.md",
+                "file": "Alternative.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Difference lists.md",
+                "file": "Alternative.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Difference lists.md",
+                "file": "Alternative.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Difference lists.md"
+                "file": "Alternative.md"
               }
             }
           }
@@ -156,11 +156,11 @@
   },
   "active": "7617d30bf6d275fc",
   "lastOpenFiles": [
-    "ByteString.md",
+    "Functors, Applicatives and Monoids.md",
     "Difference lists.md",
+    "ByteString.md",
     "Functional dependencies.md",
     "Alternative.md",
-    "Functors, Applicatives and Monoids.md",
     "IO.md",
     "Exceptions.md"
   ]
