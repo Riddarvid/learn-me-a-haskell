@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c5560fcc87bc8edf",
+        "id": "d6b062c78fe6c4fa",
         "type": "tabs",
         "children": [
           {
-            "id": "fc7211957f1989e5",
+            "id": "7617d30bf6d275fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IO.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "091b594e28d7ff29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functors, Applicatives and Monoids.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e4ab1edc2a67827",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Alternative.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "08565c099f652091",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functional dependencies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15a27675c36387b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ByteString.md",
+                "file": "Difference lists.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional dependencies.md",
+                "file": "Difference lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional dependencies.md",
+                "file": "Difference lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional dependencies.md"
+                "file": "Difference lists.md"
               }
             }
           }
@@ -203,13 +154,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08565c099f652091",
+  "active": "7617d30bf6d275fc",
   "lastOpenFiles": [
-    "Alternative.md",
+    "ByteString.md",
+    "Difference lists.md",
     "Functional dependencies.md",
+    "Alternative.md",
     "Functors, Applicatives and Monoids.md",
     "IO.md",
-    "ByteString.md",
     "Exceptions.md"
   ]
 }
