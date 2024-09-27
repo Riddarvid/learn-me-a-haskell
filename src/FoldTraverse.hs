@@ -5,7 +5,6 @@ module FoldTraverse (
   myTraverse_,
   myMapM_
 ) where
-import           Control.Applicative (liftA2)
 
 class MyFoldable t where
   myFoldr :: (a -> b -> b) -> b -> t a -> b
